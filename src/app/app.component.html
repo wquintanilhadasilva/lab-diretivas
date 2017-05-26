@@ -2,8 +2,8 @@
   <button type="button" class="btn btn-primary" (click)="aba = 'ngSwitch'">Exemplo ngSwitch</button>
   <button type="button" class="btn btn-secondary" (click)="aba = 'ngClass'">Exemplo ngClass</button>
   <button type="button" class="btn btn-success" (click)="aba = 'ngStyle'">Exemplo ngStyle</button>
-  <!--button type="button" class="btn btn-info" (click)="aba = 'ngSwitch'">Info</button>
-  <button type="button" class="btn btn-warning" (click)="aba = 'ngSwitch'">Warning</button>
+  <button type="button" class="btn btn-info" (click)="aba = 'elvis'">Exemplo Operador Elvis</button>
+  <!--button type="button" class="btn btn-warning" (click)="aba = 'ngSwitch'">Warning</button>
   <button type="button" class="btn btn-danger" (click)="aba = 'ngSwitch'">Danger</button>
   <button type="button" class="btn btn-link" (click)="aba = 'ngSwitch'">Link</button -->
 
@@ -19,6 +19,10 @@
      <div *ngSwitchCase="'ngStyle'">
       <h5>Utilizando o ngStyle</h5>
       <app-ng-style></app-ng-style>
+     </div>
+     <div *ngSwitchCase="'elvis'">
+      <h5>Utilizando o ngStyle</h5>
+      <app-operador-elvis></app-operador-elvis>
      </div>
   </div>
 </div>

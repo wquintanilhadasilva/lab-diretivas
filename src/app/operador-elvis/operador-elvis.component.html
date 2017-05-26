@@ -1,0 +1,12 @@
+<h2>Operador Elvis</h2>
+
+<h5>Jeito antigo</h5>
+
+<p>Descrição: {{tarefa.descricao}} </p>
+<p>Responsável: {{tarefa.responsavel != null ? tarefa.responsavel.nome : ''}} </p>
+<p>Lotação: {{tarefa.responsavel != null ? tarefa.responsavel.lotacao : ''}} </p>
+<br>
+<h5>Usando ELvis</h5>
+<p>Descrição: {{tarefa.descricao}} </p>
+<p>Responsável: {{tarefa?.responsavel?.nome}} </p>
+<p>Lotação: {{tarefa.responsavel?.lotacao}} </p>

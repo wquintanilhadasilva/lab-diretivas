@@ -7,13 +7,15 @@ import { AppComponent } from './app.component';
 import { NgSwitchComponent } from './ng-switch/ng-switch.component';
 import { NgClassComponent } from './ng-class/ng-class.component';
 import { NgStyleComponent } from './ng-style/ng-style.component';
+import { OperadorElvisComponent } from './operador-elvis/operador-elvis.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     NgSwitchComponent,
     NgClassComponent,
-    NgStyleComponent
+    NgStyleComponent,
+    OperadorElvisComponent
   ],
   imports: [
     BrowserModule,
