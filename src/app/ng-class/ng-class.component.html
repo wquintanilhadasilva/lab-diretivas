@@ -1,0 +1,21 @@
+  
+<p>Forma tradicional</p>  
+
+<h1>
+  <i class="glyphicon"
+  [class.glyphicon-star]="favorito"
+  [class.glyphicon-star-empty]="!favorito"
+  (click)="favorito = !favorito"></i>
+</h1>
+
+<p>Novo jeito usando ngClass</p>
+<h1>
+  <i class="glyphicon"
+  [ngClass]="
+    {
+      'glyphicon-star-empty':!favorito,
+      'glyphicon-star':favorito
+    }
+  "
+  (click)="favorito = !favorito"></i>
+</h1>
