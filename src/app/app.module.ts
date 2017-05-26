@@ -13,6 +13,7 @@ import { NgContentSeletorComponent } from './ng-content-seletor/ng-content-selet
 import { FundoAmareloDirective } from './shared/fundo-amarelo.directive';
 import { DiretivasCustomizadasComponent } from './diretivas-customizadas/diretivas-customizadas.component';
 import { BotaoDiretivaDirective } from './shared/botao-diretiva.directive';
+import { HighlightMouseDirective } from './shared/highlight-mouse.directive';
 
 @NgModule({
   declarations: [
@@ -25,7 +26,8 @@ import { BotaoDiretivaDirective } from './shared/botao-diretiva.directive';
     NgContentSeletorComponent,
     FundoAmareloDirective,
     DiretivasCustomizadasComponent,
-    BotaoDiretivaDirective
+    BotaoDiretivaDirective,
+    HighlightMouseDirective
   ],
   imports: [
     BrowserModule,
