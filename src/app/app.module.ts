@@ -10,6 +10,9 @@ import { NgStyleComponent } from './ng-style/ng-style.component';
 import { OperadorElvisComponent } from './operador-elvis/operador-elvis.component';
 import { NgContentComponent } from './ng-content/ng-content.component';
 import { NgContentSeletorComponent } from './ng-content-seletor/ng-content-seletor.component';
+import { FundoAmareloDirective } from './shared/fundo-amarelo.directive';
+import { DiretivasCustomizadasComponent } from './diretivas-customizadas/diretivas-customizadas.component';
+import { BotaoDiretivaDirective } from './shared/botao-diretiva.directive';
 
 @NgModule({
   declarations: [
@@ -19,7 +22,10 @@ import { NgContentSeletorComponent } from './ng-content-seletor/ng-content-selet
     NgStyleComponent,
     OperadorElvisComponent,
     NgContentComponent,
-    NgContentSeletorComponent
+    NgContentSeletorComponent,
+    FundoAmareloDirective,
+    DiretivasCustomizadasComponent,
+    BotaoDiretivaDirective
   ],
   imports: [
     BrowserModule,

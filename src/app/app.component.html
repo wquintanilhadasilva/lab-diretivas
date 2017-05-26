@@ -4,8 +4,8 @@
   <button type="button" class="btn btn-success" (click)="aba = 'ngStyle'">Exemplo ngStyle</button>
   <button type="button" class="btn btn-info" (click)="aba = 'elvis'">Exemplo Operador Elvis</button>
   <button type="button" class="btn btn-warning" (click)="aba = 'ngContent'">Exemplo ng-content</button>
-  <!--button type="button" class="btn btn-danger" (click)="aba = 'ngSwitch'">Danger</button>
-  <button type="button" class="btn btn-link" (click)="aba = 'ngSwitch'">Link</button -->
+  <button type="button" class="btn btn-danger" (click)="aba = 'diretivaCustom'">Diretivas customizadas</button>
+  <!--button type="button" class="btn btn-link" (click)="aba = 'ngSwitch'">Link</button -->
 
   <div class="container" [ngSwitch]="aba">
      <div *ngSwitchCase="'ngSwitch'">
@@ -27,6 +27,9 @@
       <app-ng-content>
         Corpo do painel com um ng-content fixo apenas.
       </app-ng-content>      
+     </div>
+     <div *ngSwitchCase="'diretivaCustom'">
+      <app-diretivas-customizadas></app-diretivas-customizadas>       
      </div>
   </div>
 </div>
