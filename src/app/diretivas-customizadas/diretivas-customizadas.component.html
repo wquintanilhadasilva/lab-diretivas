@@ -14,3 +14,27 @@
 <p [highlight]="'red'" [defaultColor]="'gray'">Cores customizadas com HighLight</p>
 <p [highlight]="'blue'">Azul</p>
 <p [highlight]="'green'">Verde</p>
+
+<h1>Diretiva de Estrutura Customizada - ngElse</h1>
+
+<button (click)="exibirrCursos()">Exibir Cursos</button>
+
+<div *ngIf="mostrarCursos">
+    Lista de cursos (usando o *)
+</div>
+<template [ngIf]="mostrarCursos">
+    <div>
+        Lista de cursos (sem o *, usando property-binding)
+    </div>
+</template>
+
+<br>
+
+<div *ngElse="mostrarCursos">
+    Sem cursos para listar (usando o diretiva customizada com *)
+</div>
+<template [ngElse]="mostrarCursos">
+    <div>
+        Nenhum curso a listar aqui (sem o *, usando o diretiva customizada com property-binding)
+    </div>
+</template>
