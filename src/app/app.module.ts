@@ -8,6 +8,8 @@ import { NgSwitchComponent } from './ng-switch/ng-switch.component';
 import { NgClassComponent } from './ng-class/ng-class.component';
 import { NgStyleComponent } from './ng-style/ng-style.component';
 import { OperadorElvisComponent } from './operador-elvis/operador-elvis.component';
+import { NgContentComponent } from './ng-content/ng-content.component';
+import { NgContentSeletorComponent } from './ng-content-seletor/ng-content-seletor.component';
 
 @NgModule({
   declarations: [
@@ -15,7 +17,9 @@ import { OperadorElvisComponent } from './operador-elvis/operador-elvis.componen
     NgSwitchComponent,
     NgClassComponent,
     NgStyleComponent,
-    OperadorElvisComponent
+    OperadorElvisComponent,
+    NgContentComponent,
+    NgContentSeletorComponent
   ],
   imports: [
     BrowserModule,

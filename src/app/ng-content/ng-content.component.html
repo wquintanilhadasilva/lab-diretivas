@@ -1,0 +1,24 @@
+<h2>Usando ng-content</h2>
+<div class="panel panel-default">
+  <div class="panel-heading">Titulo Fixo</div>
+  <div class="panel-body">
+    <p>Conteúdo passado por quem usa este componente:</p>
+    <ng-content></ng-content>
+  </div>
+</div>
+
+<h2>Usando ng-content com seletor</h2>
+
+<app-ng-content-seletor>
+  <div class="Titulo">
+    Título dinâmico do painel
+  </div>
+  <div class="corpo">
+    Corpo dinâmico do painel
+  </div>
+  <div class="corpo">
+    <br>
+    ::repetindo o conteúdo do corpo....concatena:: outro componente
+    <app-ng-style></app-ng-style>
+  </div>
+</app-ng-content-seletor>
